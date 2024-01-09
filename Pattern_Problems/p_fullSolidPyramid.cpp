@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void hollowFullPyramid(int cols){
+void fullSolidPyramid(int cols){
     for (int i = 1; i <= cols; i){
         for (int j = 0; j < (cols - i); j++){
             cout << " ";
@@ -23,7 +23,7 @@ int main() {
     cout << "Number Of Columns: ";
     cin >> cols;
 
-    hollowFullPyramid(cols);
+    fullSolidPyramid(cols);
 
     return 0;
 }
