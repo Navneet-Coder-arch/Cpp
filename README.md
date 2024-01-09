@@ -3,4 +3,4 @@ In this repository,
 2. Basic and some advanced cpp programs.
 3. Meaning Full Code
 
-                                                                              -Navneet Mishra
+                                                                              - By Navneet Mishra
