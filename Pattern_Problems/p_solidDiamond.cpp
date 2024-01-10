@@ -1,19 +1,37 @@
 #include <iostream>
-#include<cmath>
+
 using namespace std;
-int main()
-{
-  cout<<"Enter the row size:";
-  int row_size,out,in1,in2;
-  cin>>row_size;
-  for(out=row_size;out>=-row_size;out--)
-       {
-           for(in1=1;in1<=abs(out);in1++)
-           {
-               cout<<" ";
-           }
-           for(in2=row_size;in2>=abs(out);in2--)
-           cout<<"* ";
-           cout<<"\n";
-       }
+
+void patternSolidDiamond(int cols){
+    for (int i = 1; i <= cols; i++){
+        for (int j = 1; j <= (cols - i); j++){
+            cout << " ";
+        }
+
+        for (int k = 1; k <= i; k++){
+            cout << "* ";
+        }
+        cout << endl;
+    }
+    
+    for (int i = 1; i <= cols; i++){
+        for (int j = (cols - i); j < cols; j++){
+            cout << " ";
+        }
+
+        for (int k = i; k < cols; k++){
+            cout << "* ";
+        }
+        cout << endl;
+    }
+}
+
+int main() {
+    int cols;
+    cout << "Number Of Columns: ";
+    cin >> cols;
+
+    patternSolidDiamond(cols);
+
+    return 0;
 }
